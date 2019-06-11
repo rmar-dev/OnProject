@@ -80,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="26" column="101" selection-start-line="26" selection-start-column="101" selection-end-line="26" selection-end-column="101" />
+              <caret line="26" column="100" lean-forward="true" selection-start-line="26" selection-start-column="100" selection-end-line="26" selection-end-column="100" />
             </state>
           </provider>
         </entry>
@@ -455,7 +455,7 @@
       <workItem from="1559578266894" duration="4192000" />
       <workItem from="1559639323911" duration="26551000" />
       <workItem from="1559743494052" duration="18589000" />
-      <workItem from="1559923585389" duration="2971000" />
+      <workItem from="1559923585389" duration="3326000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1552910106377</created>
@@ -489,7 +489,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165614000" />
+    <option name="totallyTimeSpent" value="165969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -879,7 +879,7 @@
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="26" column="101" selection-start-line="26" selection-start-column="101" selection-end-line="26" selection-end-column="101" />
+          <caret line="26" column="100" lean-forward="true" selection-start-line="26" selection-start-column="100" selection-end-line="26" selection-end-column="100" />
         </state>
       </provider>
     </entry>
