@@ -70,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -292,18 +292,6 @@
             <path>
               <item name="OnProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="OnProject" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="jwt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnProject" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -397,7 +385,7 @@
       <workItem from="1559578266894" duration="4192000" />
       <workItem from="1559639323911" duration="26551000" />
       <workItem from="1559743494052" duration="18589000" />
-      <workItem from="1559923585389" duration="24622000" />
+      <workItem from="1559923585389" duration="25044000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1552910106377</created>
@@ -431,7 +419,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187265000" />
+    <option name="totallyTimeSpent" value="187687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -876,8 +864,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
