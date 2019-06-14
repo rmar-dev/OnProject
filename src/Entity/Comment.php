@@ -14,30 +14,31 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * @ApiResource(
  *     attributes={
- *          "order"={"published":"DESC"},
- *          "pagination_client_enabled"=true,
- *          "pagination_client_items_per_page"=true,
- *
- *
+ *         "order"={"published": "DESC"},
+ *         "pagination_client_enabled"=true,
+ *         "pagination_client_items_per_page"=true
  *     },
- *      itemOperations={
- *          "get",
- *          "put"={
- *              "access_control"="is_granted('ROLE_EDITOR') or (is_granted('ROLE_COMMENTATOR') and object.getAuthor() == user)"
- *          }
- *      },
- *      collectionOperations={
- *          "get",
- *          "post"={
- *              "access_control"="is_granted('ROLE_COMMENTATOR')"
- *          },
- *          "api_blog_posts_comments_get_subresource"={
- *              "normalization_context"={
- *                  "groups"={"get-comment-with-author"}
- *              }
- *          }
- *      },
- *      denormalizationContext={
+ *     itemOperations={
+ *         "get",
+ *         "put"={
+ *             "access_control"="is_granted('ROLE_EDITOR') or (is_granted('ROLE_COMMENTATOR') and object.getAuthor() == user)"
+ *         }
+ *     },
+ *     collectionOperations={
+ *         "get",
+ *         "post"={
+ *             "access_control"="is_granted('ROLE_COMMENTATOR')",
+ *             "normalization_context"={
+ *                 "groups"={"get-comment-with-author"}
+ *             }
+ *         },
+ *         "api_blog_posts_comments_get_subresource"={
+ *             "normalization_context"={
+ *                 "groups"={"get-comment-with-author"}
+ *             }
+ *         }
+ *     },
+ *     denormalizationContext={
  *         "groups"={"post"}
  *     }
  * )
@@ -52,7 +53,6 @@ class Comment implements AuthoredEntityInterface, PublishDateEntityInterface
      * @Groups({"get-comment-with-author"})
      */
     private $id;
-
     /**
      * @ORM\Column(type="text")
      * @Groups({"post", "get-comment-with-author"})
@@ -60,13 +60,11 @@ class Comment implements AuthoredEntityInterface, PublishDateEntityInterface
      * @Assert\Length(min=5, max=3000)
      */
     private $content;
-
     /**
      * @ORM\Column(type="datetime")
      * @Groups({"get-comment-with-author"})
      */
     private $published;
-
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="comments")
      * @ORM\JoinColumn(nullable=false)
@@ -115,7 +113,7 @@ class Comment implements AuthoredEntityInterface, PublishDateEntityInterface
     {
         return $this->author;
     }
-    
+
     /**
     * @param UserInterface $author
      * @return AuthoredEntityInterface
@@ -127,12 +125,12 @@ class Comment implements AuthoredEntityInterface, PublishDateEntityInterface
 
         return $this;
     }
-    
+
     public function getBlogPost(): ?BlogPost
     {
         return $this->blogPost;
     }
-    
+
     public function setBlogPost($blogPost): self
     {
      $this->blogPost = $blogPost;
@@ -144,5 +142,5 @@ class Comment implements AuthoredEntityInterface, PublishDateEntityInterface
     {
         return substr($this->content, 0, 20) . '...';
     }
-    
+
 }
